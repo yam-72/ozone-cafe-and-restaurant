@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: ozone-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ozone
+      POSTGRES_PASSWORD: ozone_password
+      POSTGRES_DB: ozone_db
+    ports:
+      - "5436:5432"
+    volumes:
+      - ozone_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  ozone_postgres_data:
