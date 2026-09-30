@@ -3,6 +3,8 @@
 /node_modules
 /build
 .env
+.env.*
+!.env.example
 # Logs
 logs
 *.log

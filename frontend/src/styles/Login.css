@@ -1,0 +1,288 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: #f5f1e8;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 390px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.login-card__content {
+  padding: 30px;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.login-card__icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f1e4c8;
+
+  font-size: 22px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.login-card h1 {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #2d241c;
+}
+
+.login-card__description {
+  margin: 8px 0 24px;
+
+  text-align: center;
+
+  color: #766b60;
+  font-size: 14px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #3a3027;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d8d0c4;
+  border-radius: 8px;
+
+  background: #faf9f6;
+
+  color: #2d241c;
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #9a7445;
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(154, 116, 69, 0.1);
+}
+
+.form-group input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+
+.login-forgot {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: -4px;
+}
+
+.login-forgot a {
+  color: #8a6338;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.login-forgot a:hover {
+  color: #5f4225;
+  text-decoration: underline;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.login-message {
+  padding: 10px 12px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.login-message--error {
+  background: #fceaea;
+  border: 1px solid #efc5c5;
+  color: #a33a3a;
+}
+
+.login-message--success {
+  background: #eaf6ed;
+  border: 1px solid #c5e4cd;
+  color: #28723b;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-button {
+  width: 100%;
+
+  padding: 12px 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2d241c;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #44372b;
+  transform: translateY(-1px);
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.login-footer {
+  margin-top: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 13px;
+  color: #766b60;
+}
+
+.login-footer a {
+  color: #8a6338;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  color: #5f4225;
+  text-decoration: underline;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 20px 12px;
+  }
+
+  .login-card {
+    max-width: 360px;
+  }
+
+  .login-card__content {
+    padding: 25px 22px;
+  }
+
+  .login-card h1 {
+    font-size: 24px;
+  }
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 45px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.password-toggle:hover {
+  opacity: 0.7;
+}
+
+.password-toggle:disabled {
+  cursor: not-allowed;
+}
